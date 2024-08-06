@@ -1,0 +1,45 @@
+/* Reset de márgenes y paddings para asegurar consistencia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f9f9; /* Color de fondo suave */
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Cuadrados flexibles */
+    gap: 20px;
+    padding: 20px;
+}
+
+.task {
+    background-color: #ffffff; /* Color de fondo del cuadrado */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: transform 0.3s ease; /* Efecto de transición al pasar el cursor */
+}
+
+.task:hover {
+    transform: translateY(-5px); /* Levanta ligeramente al pasar el cursor */
+}
+
+.task h3 {
+    color: #1a535c; /* Color del título */
+    margin-bottom: 10px;
+}
+
+.task p {
+    color: #4e5d6c; /* Color del texto */
+    margin-bottom: 5px;
+}

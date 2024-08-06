@@ -1,0 +1,46 @@
+/* Reset de márgenes y paddings para asegurar consistencia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f9f9; /* Color de fondo suave */
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    position: relative; /* Para el círculo de estado */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #1a535c; /* Color del título */
+    margin-bottom: 20px;
+}
+
+.clases-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.clase-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    color: #4e5d6c; /* Color del texto */
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.clase-box:hover {
+    background-color: #e0e0e0; /* Color de fondo al pasar el cursor */
+}

@@ -1,0 +1,84 @@
+/* Reset de márgenes y paddings para asegurar consistencia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f9f9; /* Color de fondo suave */
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh;
+}
+
+form {
+    background-color: #ffffff; /* Color de fondo del formulario */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 400px; /* Ancho máximo del formulario */
+}
+
+h2 {
+    color: #1a535c; /* Color del título */
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    color: #4e5d6c; /* Color de texto */
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: calc(100% - 20px); /* Ancho del campo de entrada */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc; /* Borde del campo de entrada */
+    border-radius: 5px;
+    transition: border-color 0.3s; /* Transición para el borde */
+}
+
+select {
+    appearance: none; /* Quitar apariencia predeterminada del combobox */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 8 8"><path fill="%234e5d6c" d="M4 0l-4 4h8l-4-4z"/></svg>'); /* Flecha personalizada */
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 16px 16px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+select:focus {
+    outline: none; /* Quitar el contorno al hacer foco */
+    border-color: #1a535c; /* Cambiar color del borde al hacer foco */
+}
+
+button[type="button"] {
+    background-color: #4e5d6c; /* Color de fondo del botón */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button[type="button"]:hover {
+    background-color: #1a535c; /* Cambio de color al pasar el cursor */
+}
+
+
+.validation-message {
+    font-size: 12px;
+    color: red;
+    margin-top: 5px; /* Espacio superior para el mensaje de error */
+    word-wrap: break-word; /* Romper palabras largas */
+}

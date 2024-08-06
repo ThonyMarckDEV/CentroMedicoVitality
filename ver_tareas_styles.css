@@ -1,0 +1,45 @@
+/* Reset de márgenes y paddings para asegurar consistencia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f9f9; /* Color de fondo suave */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* Color de fondo del contenedor */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+h2 {
+    color: #1a535c; /* Color del título */
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #1a535c; /* Color del subtítulo */
+    margin-bottom: 10px;
+}
+
+.details {
+    margin-bottom: 20px;
+    background-color: #f4f4f4; /* Color de fondo para mayor visibilidad */
+    padding: 15px;
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.download-button {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #4a90e2; /* Color azul atractivo para el botón */
+    color: white;
+    text-decoration: none;
+    border

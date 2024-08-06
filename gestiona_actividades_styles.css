@@ -1,0 +1,127 @@
+/* Reset de márgenes y paddings para asegurar consistencia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f9f9; /* Color de fondo suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    margin: 20px; /* Agregar margen para evitar que el contenido toque el borde */
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #1a535c; /* Color del título */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.actividad-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 30px; /* Aumentar el valor del padding para hacer los recuadros más grandes */
+    border-radius: 10px;
+    color: #4e5d6c; /* Color del texto */
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.actividad-box h3 {
+    margin-bottom: 10px;
+    color: #1a535c; /* Color del título */
+}
+
+.actividad-box p {
+    margin-bottom: 10px;
+}
+
+.actividad-box button {
+    background-color: #1a535c; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-right: 10px; /* Espacio entre botones */
+}
+
+.actividad-box button:hover {
+    background-color: #0b2933; /* Color de fondo del botón al pasar el cursor */
+    transform: scale(1.05); /* Agrandar el botón ligeramente al pasar el cursor */
+}
+
+form {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #1a535c; /* Color del texto del label */
+}
+
+form input[type="text"],
+form textarea,
+form input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #1a535c; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0b2933; /* Color de fondo del botón al pasar el cursor */
+    transform: scale(1.05); /* Agrandar el botón ligeramente al pasar el cursor */
+}
+
+a button {
+    background-color: #1a535c; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+a button:hover {
+    background-color: #0b2933; /* Color de fondo del botón al pasar el cursor */
+    transform: scale(1.05); /* Agrandar el botón ligeramente al pasar el cursor */
+}

@@ -1,0 +1,94 @@
+/* Reset de márgenes y paddings para asegurar consistencia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f9f9; /* Color de fondo suave */
+    display: flex;
+    flex-direction: column; /* Alinear elementos verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    min-height: 100vh; /* Altura mínima de la ventana */
+}
+
+form {
+    background-color: #ffffff; /* Color de fondo del formulario */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 20px; /* Espacio entre el formulario y la tabla */
+}
+
+h2 {
+    color: #1a535c; /* Color del título */
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    color: #4e5d6c; /* Color de texto */
+    margin-bottom: 10px;
+}
+
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc; /* Borde del campo de entrada */
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #1a535c; /* Color de fondo del botón */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #4e5d6c; /* Cambio de color al pasar el cursor */
+}
+
+table {
+    width: 70%; /* Reducir el ancho de la tabla */
+    border-collapse: collapse;
+    table-layout: fixed; /* Fijar el ancho de la tabla */
+    margin-bottom: 20px; /* Espacio entre la tabla y otros elementos */
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    overflow: hidden; /* Ocultar el texto que se desborda */
+    text-overflow: ellipsis; /* Mostrar puntos suspensivos para texto desbordado */
+    white-space: nowrap; /* Evitar el ajuste de línea */
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Botón de cierre de sesión */
+.logout-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #e60000;
+}

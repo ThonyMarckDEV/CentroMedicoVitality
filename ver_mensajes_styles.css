@@ -1,0 +1,49 @@
+/* Reset de márgenes y paddings para asegurar consistencia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f9f9; /* Color de fondo suave */
+}
+
+.mensajes-container {
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 80%;
+    max-width: 600px;
+}
+
+.mensajes-container h2 {
+    color: #1a535c; /* Color del texto */
+    margin-bottom: 20px;
+}
+
+.mensaje {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffffff; /* Color del fondo */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.mensaje p {
+    color: #4e5d6c; /* Color del texto */
+    margin-bottom: 10px;
+}
+
+/* Opcional: Estilos para enlaces */
+a {
+    color: #1a535c; /* Color del enlace */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

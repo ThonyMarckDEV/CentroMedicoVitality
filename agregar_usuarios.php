@@ -75,7 +75,7 @@ include 'menu_admin.php';
             }
             
             if (contrasena.length < 8 || !regex.test(contrasena)) {
-                passwordMessage.textContent = "La contraseña debe tener al menos 8 caracteres, incluyendo una mayúscula, un número y un símbolo.";
+                passwordMessage.textContent = "La contraseña debe tener al menos 8 caracteres, incluyendo una mayúscula, un número y un símbolo especial.";
             }
             
             if (nombre.length >= 7 && contrasena.length >= 8 && regex.test(contrasena)) {

@@ -1,9 +1,0 @@
-Server: sql10.freemysqlhosting.net
-Name: sql10709813
-Username: sql10709813
-Password: Yrfi9imy2h
-Port number: 3306
-
-PAG 00WEB
-
-Vitality2024@
